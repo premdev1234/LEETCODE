@@ -18,16 +18,17 @@ public:
         ios::sync_with_stdio(0);
         cin.tie(0);
         cout.tie(0);
-        return dfs(root).first;
+        int ans = INT_MIN;
+        dfs(root, ans);
+        return ans;
     }
 
 private:
-    pair<int, int> dfs(TreeNode* root) {
-        if (!root) return {INT_MIN, 0};
-        auto [leftMax, leftSingle] = dfs(root->left);
-        auto [rightMax, rightSingle] = dfs(root->right);
-        int maxSingle = max({root->val, root->val + leftSingle, root->val + rightSingle});
-        int maxTop = max(leftMax, max(rightMax, maxSingle));
-        return {max(maxTop, root->val + leftSingle + rightSingle), maxSingle};
+    int dfs(TreeNode* root, int& ans) {
+        if (!root) return 0;
+        int leftSingle = max(0, dfs(root->left, ans));
+        int rightSingle = max(0, dfs(root->right, ans));
+        ans = max(ans, leftSingle + rightSingle + root->val);
+        return max(leftSingle, rightSingle) + root->val;
     }
 };
