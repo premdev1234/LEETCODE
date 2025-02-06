@@ -1,9 +1,6 @@
 class Solution {
 public:
     int maxSum(vector<int>& nums1, vector<int>& nums2) {
-        ios::sync_with_stdio(false);
-        
-
         const int mod = 1e9 + 7;
         long long sum1 = 0, sum2 = 0  , result =0 ;
         int i = 0, j = 0;
