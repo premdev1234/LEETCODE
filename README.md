@@ -32,23 +32,7 @@ Below is a pie chart representing the distribution of topics based on the LeetCo
 
 ![Topic Distribution](https://quickchart.io/chart?c=%7Btype%3A%27pie%27%2Cdata%3A%7Blabels%3A%5B%27Array%20%26%20Hashing%27%2C%27Two%20Pointers%27%2C%27Sliding%20Window%27%2C%27Binary%20Search%27%2C%27Recursion%20%26%20Backtracking%27%2C%27Dynamic%20Programming%27%2C%27Graph%20%26%20Trees%27%2C%27Bit%20Manipulation%27%2C%27Advanced%20Data%20Structures%27%5D%2Cdatasets%3A%5B%7Bdata%3A%5B20%2C15%2C10%2C10%2C10%2C20%2C5%2C5%2C5%5D%2CbackgroundColor%3A%5B%27%23FF6384%27%2C%27%2336A2EB%27%2C%27%23FFCE56%27%2C%27%234BC0C0%27%2C%27%239966FF%27%2C%27%23FF9F40%27%2C%27%23E7E9ED%27%2C%27%239CCC65%27%2C%27%23FF7043%27%5D%7D%5D%7D%2Coptions%3A%7Btitle%3A%7Bdisplay%3Atrue%2Ctext%3A%27Distribution%20of%20LeetCode%20Topics%27%7D%7D%7D)
 
-## Repository Structure
 
-- **/Array_Hashing** – Solutions related to arrays, hash tables, and related problems.
-- **/Two_Pointers** – Problems solved using the two pointers technique.
-- **/Sliding_Window** – Code and explanations for sliding window problems.
-- **/Binary_Search** – Binary search implementations and challenges.
-- **/Recursion_Backtracking** – Recursive solutions and backtracking strategies.
-- **/Dynamic_Programming** – Dynamic programming problems and optimized solutions.
-- **/Graph_Trees** – Solutions that involve graphs and trees.
-- **/Bit_Manipulation** – Problems focused on bit-level operations.
-- **/Advanced_Data_Structures** – Utilization of advanced data structures to solve challenging problems.
-
-## How to Contribute
-
-- **Fork the Repository**: Create your own branch for adding new solutions.
-- **Follow the Style Guide**: Ensure your code is clean, well-documented, and consistent with the existing style.
-- **Submit a Pull Request**: Explain your contributions clearly in the pull request for review.
 
 ## License
 
