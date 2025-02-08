@@ -1,5 +1,6 @@
 class Solution {
     static const int MODULO = 1e9 + 7;
+    vector<long long> fact, inv;
 public:
     int waysToBuildRooms(vector<int>& prevRoom) {   
         int n = prevRoom.size();
@@ -8,8 +9,9 @@ public:
             adj[prevRoom[i]].push_back(i);
         }
         
-        // On-the-fly factorial calculation
-        vector<long long> fact(n + 1, 1), inv(n + 1, 1);
+        // Precompute factorial and inverse factorial dynamically
+        fact.resize(n + 1, 1);
+        inv.resize(n + 1, 1);
         for (int i = 2; i <= n; i++) {
             fact[i] = fact[i - 1] * i % MODULO;
         }
@@ -18,7 +20,7 @@ public:
             inv[i] = inv[i + 1] * (i + 1) % MODULO;
         }
 
-        return dfs(0, adj, fact, inv).first;
+        return dfs(0, adj).first;
     }
 
 private:
@@ -32,11 +34,11 @@ private:
         return res;
     }
 
-    pair<long long, int> dfs(int u, vector<vector<int>>& adj, vector<long long>& fact, vector<long long>& inv) {
+    pair<long long, int> dfs(int u, vector<vector<int>>& adj) {
         long long ways = 1;
         int subtree_size = 1;
         for (int v : adj[u]) {
-            auto [child_ways, child_size] = dfs(v, adj, fact, inv);
+            auto [child_ways, child_size] = dfs(v, adj);
             ways = ways * child_ways % MODULO;
             ways = ways * fact[subtree_size + child_size - 1] % MODULO * inv[child_size] % MODULO * inv[subtree_size - 1] % MODULO;
             subtree_size += child_size;
