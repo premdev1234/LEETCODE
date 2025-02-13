@@ -21,13 +21,15 @@ public:
                     count = (count + dp[j]) % MOD;
                 } 
                 else {
+                    // Numeric comparison for exact length
+                    long long num = 0;
                     bool valid = true;
                     for (int m = 0; m < l; ++m) {
-                        if (s[j + m] > k_str[m]) {
+                        num = num * 10 + (s[j + m] - '0');
+                        if (num > k) {
                             valid = false;
                             break;
                         }
-                        else if (s[j + m] < k_str[m]) break;
                     }
                     if (valid) count = (count + dp[j]) % MOD;
                 }
