@@ -18,6 +18,6 @@ public:
         }
 
         sort(res.begin(), res.end());
-        return move(res);
+        return res;
     }
 };
