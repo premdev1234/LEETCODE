@@ -1,26 +1,27 @@
 class Solution {
-public:
-    vector<int> encode(const string &s) {
-        unordered_map<char, int> mapping;
-        vector<int> pattern;
-        int id = 0;
-        for (char c : s) {
-            if (mapping.find(c) == mapping.end()) {
-                mapping[c] = id++;
-            }
-            pattern.push_back(mapping[c]);
-        }
-        return pattern;
+ public:
+  vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
+    vector<string> ans;
+
+    for (const string& word : words)
+      if (isIsomorphic(word, pattern))
+        ans.push_back(word);
+
+    return ans;
+  }
+
+ private:
+  bool isIsomorphic(const string& w, const string& p) {
+    vector<int> map_w(128);
+    vector<int> map_p(128);
+
+    for (int i = 0; i < w.length(); ++i) {
+      if (map_w[w[i]] != map_p[p[i]])
+        return false;
+      map_w[w[i]] = i + 1;
+      map_p[p[i]] = i + 1;
     }
 
-    vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
-        vector<int> target = encode(pattern);
-        vector<string> result;
-        for (const string &word : words) {
-            if (encode(word) == target) {
-                result.push_back(word);
-            }
-        }
-        return result;
-    }
+    return true;
+  }
 };
