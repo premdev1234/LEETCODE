@@ -19,15 +19,13 @@ public:
 
     
 
-    NumMatrix(vector<vector<int>>& matrix) {
-        int n = matrix.size(), m = matrix[0].size();
-        grid.resize(n, vector<int>(m));  // resize all rows properly
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                grid[i][j] = matrix[i][j];
-                if (i > 0) grid[i][j] += grid[i - 1][j];
-                if (j > 0) grid[i][j] += grid[i][j - 1];
-                if (i > 0 && j > 0) grid[i][j] -= grid[i - 1][j - 1];
+    NumMatrix(vector<vector<int>>& matrix) : grid(matrix) {
+        int row, rowSize = matrix.size(), col, colSize = matrix[0].size();
+        for(row = 0; row < rowSize; row++){
+            for(col = 0; col < colSize; col++){
+                grid[row][col] += ((row - 1 >= 0) ? grid[row - 1][col] : 0) +
+                                        ((col - 1 >= 0) ? grid[row][col - 1] : 0) -
+                                        ((row - 1 >= 0 && col - 1 >= 0) ? grid[row - 1][col - 1] : 0);
             }
         }
     }
