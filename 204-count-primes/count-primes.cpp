@@ -14,6 +14,6 @@ public:
             }
         }
 
-        return count(isprime.begin(), isprime.end(), true);
+        return move(count(isprime.begin(), isprime.end(), true));
     }
 };
