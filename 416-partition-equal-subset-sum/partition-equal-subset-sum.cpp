@@ -4,15 +4,12 @@ public:
         int sum = accumulate(nums.begin(), nums.end(), 0);
         if (sum % 2 != 0) return false;
         int target = sum / 2;
-
-        vector<bool> dp(target + 1, false);
-        dp[0] = true;  // base case
-
+        bitset<20001> bits;  // adjust the 20001 to max possible target+1
+        bits[0] = 1;
         for (int num : nums) {
-            for (int j = target; j >= num; --j) {
-                dp[j] = dp[j] || dp[j - num];
-            }
+            bits |= (bits << num);
+            if (bits[target]) return true;
         }
-        return dp[target];
+        return bits[target];
     }
 };
