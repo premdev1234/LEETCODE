@@ -1,14 +1,20 @@
 class Solution {
 public:
     int combinationSum4(vector<int>& coins, int target) {
-        int n =  coins.size() ; sort(coins.begin(),coins.end());
-        vector<__int128_t> dp(target+1,0);
-        dp[0] = 1 ;
-        for(int i = 1 ; i <= target ; i++){
-            for(int coin  : coins){
-                if(i-coin >= 0 ) dp[i] += dp[i-coin] ;
+        using ll = __int128_t;
+        const int n = coins.size();
+        vector<ll> dp(target + 1, 0);
+        dp[0] = 1;
+
+        sort(coins.begin(), coins.end()); // helpful if pruning
+
+        for (int i = 1; i <= target; i++) {
+            for (int coin : coins) {
+                if (coin > i) break; // pruning
+                if(i-coin >= 0 ) dp[i] += dp[i - coin];
             }
         }
-        return dp[target];
+
+        return dp[target] > INT_MAX ? -1 : (int)dp[target]; // safe cast
     }
 };
