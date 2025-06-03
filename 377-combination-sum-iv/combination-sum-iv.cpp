@@ -3,7 +3,7 @@ public:
     int combinationSum4(vector<int>& coins, int target) {
         using ll = __int128_t;
         const int n = coins.size();
-        vector<ll> dp(target + 1, 0);
+        vector<unsigned long long> dp(target + 1, 0);
         dp[0] = 1;
 
         sort(coins.begin(), coins.end()); // helpful if pruning
@@ -15,6 +15,6 @@ public:
             }
         }
 
-        return dp[target] > INT_MAX ? -1 : (int)dp[target]; // safe cast
+        return dp[target] > INT_MAX ? -1 : static_cast<int>(dp[target]); // safe cast
     }
 };
