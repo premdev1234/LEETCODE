@@ -1,9 +1,8 @@
 class Solution {
 public:
+    unsigned long long dp[1001]{};
     int combinationSum4(vector<int>& coins, int target) {
-        using ll = __int128_t;
         const int n = coins.size();
-        vector<unsigned long long> dp(target + 1, 0);
         dp[0] = 1;
 
         sort(coins.begin(), coins.end()); // helpful if pruning
