@@ -1,22 +1,29 @@
 class Solution {
 public:
     Node* connect(Node* root) {
-         if (!root) return root;
-        
-        Node* leftmost = root;
-        
-        while (leftmost->left) {
-            Node* head = leftmost;
-            while (head) {
-                head->left->next = head->right;
-                if (head->next) {
-                    head->right->next = head->next->left;
-                }
-                head = head->next;
+        if (!root) return nullptr;
+
+        Node* level_start = root;
+
+        while (level_start->left != nullptr) {
+            Node* current = level_start;
+
+            while (current != nullptr) {
+                // Connect left → right
+                current->left->next = current->right;
+
+                // Connect right → next's left, if it exists
+                if (current->next)
+                    current->right->next = current->next->left;
+
+                // Move horizontally in the current level
+                current = current->next;
             }
-            leftmost = leftmost->left;
+
+            // Move to the next level
+            level_start = level_start->left;
         }
-        
+
         return root;
     }
 };
