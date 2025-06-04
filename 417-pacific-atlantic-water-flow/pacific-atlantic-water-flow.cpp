@@ -28,12 +28,12 @@ public:
 
         vector<vector<int>> result;
         for (int i = 0; i < n; ++i) {
+            auto both = pacific[i] & atlantic[i];  // Bitwise AND
             for (int j = 0; j < m; ++j) {
-                if (pacific[i][j] && atlantic[i][j]) {
-                    result.push_back({i, j});
-                }
+                if (both[j]) result.push_back({i, j});
             }
         }
+
         return result;
     }
 };
