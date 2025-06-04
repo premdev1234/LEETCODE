@@ -1,30 +1,31 @@
 class Solution {
+    bool dfs(int node, const vector<vector<int>>& graph, vector<int>& color) {
+        for (int neighbor : graph[node]) {
+            if (color[neighbor] == -1) {
+                color[neighbor] = 1 - color[node]; // assign opposite color
+                if (!dfs(neighbor, graph, color)) {
+                    return false;
+                }
+            } else if (color[neighbor] == color[node]) {
+                return false; // same color neighbor detected
+            }
+        }
+        return true;
+    }
+
 public:
     bool isBipartite(vector<vector<int>>& graph) {
-    int n = graph.size();
-    vector<char> color(n, -1);  // -1 means uncolored
-
-    for (int start = 0; start < n; ++start) {
-        if (color[start] == -1) {
-            queue<int> q;
-            q.push(start);
-            color[start] = 0;
-
-            while (!q.empty()) {
-                int u = q.front(); q.pop();
-                for (int v : graph[u]) {
-                    if (color[v] == -1) {
-                        color[v] = 1 - color[u];  // alternate color
-                        q.push(v);
-                    } else if (color[v] == color[u]) {
-                        // Same color on both ends → not bipartite
-                        return false;
-                    }
+        int n = graph.size();
+        vector<int> color(n, -1);
+        for (int i = 0; i < n; i++) {
+            if (color[i] == -1) {
+                color[i] = 0; // start coloring with 0
+                if (!dfs(i, graph, color)) {
+                    return false;
                 }
             }
         }
+        return true;
     }
-    return true;
-}
-
 };
+
