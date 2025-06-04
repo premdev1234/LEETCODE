@@ -1,37 +1,40 @@
 class Solution {
 public:
-    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
-        int n = graph.size();
-        vector<vector<int>> reverseGraph(n);
-        vector<int> outdegree(n, 0);
-        
-        // Build reverse graph and outdegree count
-        for (int u = 0; u < n; ++u) {
-            for (int v : graph[u]) {
-                reverseGraph[v].push_back(u);
+    bool dfs(int node, bitset<10001>& visited, bitset<10001>& onPath,
+             vector<bool>& safe, vector<vector<int>>& graph) {
+        visited[node] = true;
+        onPath[node] = true;
+
+        for (int neighbor : graph[node]) {
+            if (!visited[neighbor]) {
+                if (dfs(neighbor, visited, onPath, safe, graph)) {
+                    return true;
+                }
+            } else if (onPath[neighbor]) {
+                return true;
             }
-            outdegree[u] = graph[u].size();
         }
 
-        queue<int> q;
-        // Start from terminal nodes (outdegree 0)
-        for (int i = 0; i < n; ++i)
-            if (outdegree[i] == 0) q.push(i);
-        
+        onPath[node] = false;
+        safe[node] = true;
+        return false;
+    }
+
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        int n = graph.size();
+        bitset<10001> visited, onPath;
         vector<bool> safe(n, false);
-        while (!q.empty()) {
-            int node = q.front(); q.pop();
-            safe[node] = true;
-            for (int parent : reverseGraph[node]) {
-                if (--outdegree[parent] == 0)
-                    q.push(parent);
+
+        for (int i = 0; i < n; ++i) {
+            if (!visited[i]) {
+                dfs(i, visited, onPath, safe, graph);
             }
         }
 
         vector<int> result;
-        for (int i = 0; i < n; ++i)
+        for (int i = 0; i < n; ++i) {
             if (safe[i]) result.push_back(i);
-        
+        }
         return result;
     }
 };
