@@ -1,35 +1,33 @@
 class Solution {
 public:
-    // Directions: down, right, up, left
-    const vector<pair<int, int>> directions = {{1,0}, {0,1}, {-1,0}, {0,-1}};
-
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
-        int rows = mat.size(), cols = mat[0].size();
-        vector<vector<int>> dist(rows, vector<int>(cols, -1));
-        queue<pair<int, int>> q;
+        int m = mat.size();
+        int n = mat[0].size();
+        vector<vector<int>> dp(m, vector<int>(n, INT_MAX - 1));
 
-        // Start BFS from all 0s (multi-source BFS)
-        for (int i = 0; i < rows; ++i) {
-            for (int j = 0; j < cols; ++j) {
-                if (mat[i][j] == 0) {
-                    dist[i][j] = 0;
-                    q.emplace(i, j);
-                }
+        // Initialize dp for zero cells
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (mat[i][j] == 0) dp[i][j] = 0;
             }
         }
 
-        while (!q.empty()) {
-            auto [i, j] = q.front(); q.pop();
-            for (auto [di, dj] : directions) {
-                int ni = i + di, nj = j + dj;
-                // Valid cell and not visited
-                if (ni >= 0 && ni < rows && nj >= 0 && nj < cols && dist[ni][nj] == -1) {
-                    dist[ni][nj] = dist[i][j] + 1;
-                    q.emplace(ni, nj);
-                }
+        // First pass: top-left to bottom-right
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i > 0) dp[i][j] = min(dp[i][j], dp[i-1][j] + 1);
+                if (j > 0) dp[i][j] = min(dp[i][j], dp[i][j-1] + 1);
             }
         }
 
-        return dist;
+        // Second pass: bottom-right to top-left
+        for (int i = m - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                if (i < m - 1) dp[i][j] = min(dp[i][j], dp[i+1][j] + 1);
+                if (j < n - 1) dp[i][j] = min(dp[i][j], dp[i][j+1] + 1);
+            }
+        }
+
+        return dp;
     }
 };
