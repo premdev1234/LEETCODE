@@ -1,7 +1,7 @@
 class Solution {
 public:
     int n, m;
-    vector<vector<int>> directions = {{0,1}, {1,0}, {0,-1}, {-1,0}};
+    static constexpr int directions[4][2] = {{0,1}, {1,0}, {0,-1}, {-1,0}};
     static constexpr int MAX_M = 200;
 
     void dfs(int i, int j, vector<vector<int>>& heights, vector<bitset<MAX_M>>& ocean) {
