@@ -1,20 +1,17 @@
 class Solution {
 public:
-    int lengthOfLongestSubstring(string s) {
-        unordered_set<char> st;
-        int n = s.size();
-        int left = 0, right = 0, res = 0;
-
-        while (right < n) {
-            while (st.count(s[right])) {
-                st.erase(s[left]);
-                left++;
-            }
-            st.insert(s[right]);
-            res = max(res, right - left + 1);
-            right++;
+    int lengthOfLongestSubstring(const string& s) {
+        int freq[256] = {-1}; // ASCII character size
+        fill(freq, freq + 256, -1);
+        int left = 0;
+        int len_max = 0;
+        for (int right = 0; right < s.size(); right++) {
+            char c = s[right];
+            if (freq[c] >= left) left = freq[c] + 1;
+            freq[c] = right; // update last seen index
+            len_max = max(len_max, right - left + 1);
         }
 
-        return res;
+        return len_max;
     }
 };
