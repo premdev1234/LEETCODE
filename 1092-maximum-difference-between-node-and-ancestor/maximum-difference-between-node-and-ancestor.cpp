@@ -13,6 +13,6 @@ public:
     }
 
     int maxAncestorDiff(TreeNode* root) {
-        return dfs(root, root->val, root->val);
+        return move(dfs(root, root->val, root->val));
     }
 };
