@@ -1,42 +1,43 @@
 class Solution {
 public:
-    int solveTopLeft(int s_i,int s_j,vector<vector<int>>&mat)
-    {
-        int m=mat.size();
-        int n=mat[0].size();
-        int count=0;
-        int lastZeroColumn=n;
-        for(int i=s_i;i<m;i++)
-        {
-            for(int j=s_j;j<lastZeroColumn;j++)
-            {
-                if(mat[i][j])  // I have handled  last row zero with help of s_j column value..think you will get it 
-                    count++;
-                else
-                {
-                    lastZeroColumn=j;
-                    break;
-                }
-            }
-             if( lastZeroColumn == s_j) // making it more clear
-                return  count;
+    int numSubmat(vector<vector<int>>& matrix) {
+        int rows = matrix.size(), cols = matrix[0].size();
 
-        }
-        return count;
-    }
-    int numSubmat(vector<vector<int>>& mat) 
-    {
-        int m=mat.size();
-        int n=mat[0].size();
-        int ans=0;
-        for(int i=0;i<m;i++)
-        {
-            for(int j=0;j<n;j++)
-            {
-                ans+=solveTopLeft(i,j,mat);
+        // Step 1: Compute heights of consecutive ones column-wise
+        for (int i = 1; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (matrix[i][j] == 1)
+                    matrix[i][j] += matrix[i - 1][j];
             }
         }
-        return ans;
-        
+
+        int total = 0;
+
+        // Step 2: For each row, use monotonic stack to count submatrices ending at each column
+        for (int i = 0; i < rows; ++i) {
+            stack<int> stk;
+            vector<int> count(cols, 0);
+
+            for (int j = 0; j < cols; ++j) {
+                while (!stk.empty() && matrix[i][stk.top()] >= matrix[i][j]) {
+                    stk.pop();
+                }
+
+                if (stk.empty()) {
+                    count[j] = matrix[i][j] * (j + 1);
+                } else {
+                    int prev = stk.top();
+                    count[j] = count[prev] + matrix[i][j] * (j - prev);
+                }
+
+                stk.push(j);
+            }
+
+            for (const int& cnt : count) {
+                total += cnt;
+            }
+        }
+
+        return total;
     }
 };
