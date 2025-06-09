@@ -30,6 +30,6 @@ public:
             int shortest = min(dist[i][RED], dist[i][BLUE]);
             res[i] = (shortest == 1e9 ? -1 : shortest);
         }
-        return res;
+        return move(res);
     }
 };
