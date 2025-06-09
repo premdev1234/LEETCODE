@@ -1,35 +1,31 @@
 class Solution {
 public:
-    const vector<pair<int, int>> knightMoves = {
-        {2, 1}, {1, 2}, {-1, 2}, {-2, 1},
-        {-2, -1}, {-1, -2}, {1, -2}, {2, -1}
-    };
 
-    double knightProbability(int n, int totalMoves, int rows, int cols) {
-        // dp[k][i][j] = probability to be on cell (i, j) after k moves
-        vector<vector<vector<double>>> dp(totalMoves + 1, vector<vector<double>>(n, vector<double>(n, 0.0)));
-        dp[0][rows][cols] = 1.0;
+double dp[26][26][101];
+    double total_prob(int i,int j,int k,int n){
 
-        for (int move = 1; move <= totalMoves; ++move) {
-            for (int i = 0; i < n; ++i) {
-                for (int j = 0; j < n; ++j) {
-                    for (const auto& [dx, dy] : knightMoves) {
-                        int prevX = i + dx;
-                        int prevY = j + dy;
-                        if (prevX >= 0 && prevX < n && prevY >= 0 && prevY < n) {
-                            dp[move][i][j] += dp[move - 1][prevX][prevY] / 8.0;
-                        }
-                    }
-                }
-            }
-        }
+        if(i<0 || j<0 || i>=n || j>=n ) return 0.0;
+        if(k<=0) return 1.0;
+        if(dp[i][j][k] > -0.1) return dp[i][j][k];
+        double a=total_prob(i+1,j+2,k-1,n)*(0.125);//done
+        double a_= total_prob(i+1,j-2,k-1,n)*(0.125); //done
 
-        // Sum all probabilities after k moves
-        double totalProbability = 0.0;
-        for (int i = 0; i < n; ++i)
-            for (int j = 0; j < n; ++j)
-                totalProbability += dp[totalMoves][i][j];
+        double b=total_prob(i-1,j+2,k-1,n)*(0.125);//done
+        double b_=total_prob(i-1,j-2,k-1,n)*(0.125); //dpne
 
-        return totalProbability;
+        double c= total_prob(i+2,j+1,k-1,n)*(0.125);//done
+        double c_=total_prob(i+2,j-1,k-1,n)*(0.125);//done
+
+        double d=total_prob(i-2,j+1,k-1,n)*(0.125); //done
+        double d_=total_prob(i-2,j-1,k-1,n)*(0.125); //done
+    return dp[i][j][k]=a+b+c+d+a_+b_+c_+d_;
+    }
+
+    double knightProbability(int n, int k, int row, int column) {
+
+       memset(dp,-1,sizeof(dp)); 
+        return total_prob(column,row,k,n);
+        
+
     }
 };
