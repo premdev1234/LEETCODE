@@ -1,35 +1,37 @@
 class Solution {
 public:
     vector<int> shortestAlternatingPaths(int n, vector<vector<int>>& redEdges, vector<vector<int>>& blueEdges) {
-        constexpr int RED = 0, BLUE = 1;
-        unordered_map<int, vector<pair<int, int>>> graph; // u -> [(v, color)]
-        
-        for (const auto &edge : redEdges) graph[edge[0]].push_back({edge[1], RED});
-        for (const auto &edge : blueEdges) graph[edge[0]].push_back({edge[1], BLUE});
+        vector<vector<int>> red(n), blue(n);
+        for (auto& e : redEdges) red[e[0]].push_back(e[1]);
+        for (auto& e : blueEdges) blue[e[0]].push_back(e[1]);
 
-        vector<vector<int>> dist(n, vector<int>(2, 1e9)); // dist[node][color]
-        dist[0][RED] = dist[0][BLUE] = 0;
+        vector<vector<int>> dist(n, vector<int>(2, -1)); // dist[node][color]: 0 = red, 1 = blue
+        queue<tuple<int, int, int>> q; // node, color, distance
 
-        queue<tuple<int, int, int>> q; // (node, color, distance)
-        q.emplace(0, RED, 0);
-        q.emplace(0, BLUE, 0);
+        q.push({0, 0, 0}); // red
+        q.push({0, 1, 0}); // blue
+        dist[0][0] = dist[0][1] = 0;
 
         while (!q.empty()) {
-            auto [u, lastColor, d] = q.front(); q.pop();
+            auto [u, color, d] = q.front(); q.pop();
+            auto& next = (color == 0) ? blue : red; // alternate color
+            int nextColor = 1 - color;
 
-            for (auto &[v, color] : graph[u]) {
-                if (color != lastColor && d + 1 < dist[v][color]) {
-                    dist[v][color] = d + 1;
-                    q.emplace(v, color, d + 1);
+            for (int v : next[u]) {
+                if (dist[v][nextColor] == -1) {
+                    dist[v][nextColor] = d + 1;
+                    q.push({v, nextColor, d + 1});
                 }
             }
         }
 
-        vector<int> res(n);
+        vector<int> ans(n);
         for (int i = 0; i < n; ++i) {
-            int shortest = min(dist[i][RED], dist[i][BLUE]);
-            res[i] = (shortest == 1e9 ? -1 : shortest);
+            if (dist[i][0] == -1 && dist[i][1] == -1) ans[i] = -1;
+            else if (dist[i][0] == -1) ans[i] = dist[i][1];
+            else if (dist[i][1] == -1) ans[i] = dist[i][0];
+            else ans[i] = min(dist[i][0], dist[i][1]);
         }
-        return move(res);
+        return move(ans);
     }
 };
