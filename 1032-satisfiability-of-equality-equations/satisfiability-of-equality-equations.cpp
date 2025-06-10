@@ -1,47 +1,34 @@
-struct DSU {
-    vector<int> parent, size;
-    DSU(int n) : parent(n), size(n, 1) {
-        iota(parent.begin(), parent.end(), 0);
-    }
-    int find(int x) {
-        if (x != parent[x]) parent[x] = find(parent[x]);
-        return parent[x];
-    }
-    bool unite(int a, int b) {
-        a = find(a); b = find(b);
-        if (a == b) return false;
-        if (size[a] < size[b]) swap(a, b);
-        parent[b] = a;
-        size[a] += size[b];
-        return true;
-    }
-};
-
 class Solution {
 public:
+    int find(vector<int>&disjoint,int u){
+        if(disjoint[u]==-1)return u;
+        return disjoint[u]=find(disjoint,disjoint[u]);
+
+    }
     bool equationsPossible(vector<string>& equations) {
-        DSU dsu(26); // For lowercase letters a-z (0 to 25)
+        vector<int>disjoint(26,-1);
+        for(int i=0;i<equations.size();i++)
+        {      
+           
+            if(equations[i][1]=='=')
+            {
+                 int px=find(disjoint,equations[i][0]-'a');
+            int py=find(disjoint,equations[i][3]-'a');
 
-        // Step 1: Process all equality equations (==) to group variables
-        for (const string& eq : equations) {
-            if (eq[1] == '=') { // Check for ==
-                int x = eq[0] - 'a'; // Convert char to index (0-25)
-                int y = eq[3] - 'a';
-                dsu.unite(x, y); // Unite variables that are equal
+             if(px!=py)disjoint[px]=py;
+                  
             }
         }
+          for(int i=0;i<equations.size();i++)
+        {   
+            if(equations[i][1]=='!')
+            {
+                int px=find(disjoint,equations[i][0]-'a');
+                int py=find(disjoint,equations[i][3]-'a');
+                if(px==py)return false;
 
-        // Step 2: Check inequality equations (!=) for contradictions
-        for (const string& eq : equations) {
-            if (eq[1] == '!') { // Check for !=
-                int x = eq[0] - 'a';
-                int y = eq[3] - 'a';
-                if (dsu.find(x) == dsu.find(y)) { // If in same group, contradiction
-                    return false;
-                }
             }
-        }
-
-        return true;
+    }
+    return true;
     }
 };
