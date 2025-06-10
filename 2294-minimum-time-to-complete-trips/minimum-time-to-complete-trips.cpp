@@ -1,33 +1,24 @@
 class Solution {
 public:
-    bool trips(const vector<int>& time, long long timer, long long totalTrips) {
-        long long trip = 0;
-        for (int t : time) {
-            if (t > timer)
-                break; // optimization: no more contribution
-            trip += timer / t;
-            if (trip >= totalTrips)
-                return true; // early exit
-        }
-        return false;
-    }
-
     long long minimumTime(vector<int>& time, int totalTrips) {
-        sort(time.begin(), time.end());
-
-        long long low = 1; // min possible time
-        long long high =
-            1LL * *min_element(time.begin(), time.end()) * totalTrips;
-
-        while (low < high) {
-            long long mid = low + (high - low) / 2;
-            if (trips(time, mid, totalTrips)) {
-                high = mid; // try smaller
+        long long left = 1;
+        long long right = (long long)*min_element(time.begin(), time.end()) * totalTrips;
+        
+        while (left < right) {
+            long long mid = left + (right - left) / 2;
+            long long total = 0;
+            for (int t : time) {
+                total += mid / t;
+                if (total >= totalTrips) {
+                    break;
+                }
+            }
+            if (total >= totalTrips) {
+                right = mid;
             } else {
-                low = mid + 1; // need more time
+                left = mid + 1;
             }
         }
-        return low;
+        return left;
     }
 };
-auto init = atexit([]() { ofstream("display_runtime.txt") << "0";});
