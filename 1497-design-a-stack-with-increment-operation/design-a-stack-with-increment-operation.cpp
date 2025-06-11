@@ -1,47 +1,33 @@
 class CustomStack {
-    int* arr;
+    vector<int> stk;
+    vector<int> inc;
     int maxSize;
-    int top;
+
 public:
-    CustomStack(int maxSize) {
-        this->maxSize = maxSize;
-        arr = new int[maxSize];
-        top = -1;
-    }
-    
+    CustomStack(int maxSize) : maxSize(maxSize) {}
+
     void push(int x) {
-        if(maxSize-top > 1){
-            top++;
-            arr[top] = x;
+        if (stk.size() < maxSize) {
+            stk.push_back(x);
+            inc.push_back(0);  // No pending increment for this element initially
         }
     }
-    
+
     int pop() {
-       if(top >= 0){
-        int ans = arr[top];
-        top--;
-        return ans;
-       }
-       else{
-        return -1;
-       }
+        if (stk.empty()) return -1;
+
+        int i = stk.size() - 1;
+        int res = stk[i] + inc[i];
+
+        if (i > 0) inc[i - 1] += inc[i];  // propagate increment down
+        stk.pop_back();
+        inc.pop_back();
+
+        return res;
     }
-    
+
     void increment(int k, int val) {
-        int temp = top;
-        top = 0;
-        while(top < k && top < maxSize){
-            arr[top] += val;
-            top++;
-        }
-        top = temp;
+        int i = min(k, (int)stk.size()) - 1;
+        if (i >= 0) inc[i] += val;  // only touch one element — lazy update
     }
 };
-
-/**
- * Your CustomStack object will be instantiated and called as such:
- * CustomStack* obj = new CustomStack(maxSize);
- * obj->push(x);
- * int param_2 = obj->pop();
- * obj->increment(k,val);
- */
