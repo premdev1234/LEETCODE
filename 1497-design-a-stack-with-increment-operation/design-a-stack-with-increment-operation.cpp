@@ -1,18 +1,35 @@
 class CustomStack {
-    vector<int> stk;
+    int* arr;
     int maxSize;
-
+    int top;
 public:
-    CustomStack(int maxSize) { this->maxSize = maxSize;}
-    void push(int x) {if (stk.size() < maxSize) stk.push_back(x);}
-    int pop() {
-        if (stk.empty()) return -1;
-        int res = stk.back();
-        stk.pop_back();
-        return res;
+    CustomStack(int maxSize) {
+        this->maxSize = maxSize;
+        arr = new int[maxSize];
+        top = -1;
     }
+    
+    void push(int x) {
+        if (top + 1 < maxSize) {
+            arr[++top] = x;
+        }
+    }
+    
+    int pop() {
+        if (top >= 0) {
+            return arr[top--];
+        }
+        return -1;
+    }
+    
     void increment(int k, int val) {
-        for (int i = 0; i < min(k, (int)stk.size()); ++i) stk[i] += val;
+        for (int i = 0; i <= top && i < k; ++i) {
+            arr[i] += val;
+        }
+    }
+
+    ~CustomStack() {
+        delete[] arr;
     }
 };
 
