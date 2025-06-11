@@ -10,29 +10,33 @@ public:
     }
     
     void push(int x) {
-        if (top + 1 < maxSize) {
-            arr[++top] = x;
+        if(maxSize-top > 1){
+            top++;
+            arr[top] = x;
         }
     }
     
     int pop() {
-        if (top >= 0) {
-            return arr[top--];
-        }
+       if(top >= 0){
+        int ans = arr[top];
+        top--;
+        return ans;
+       }
+       else{
         return -1;
+       }
     }
     
     void increment(int k, int val) {
-        for (int i = 0; i <= top && i < k; ++i) {
-            arr[i] += val;
+        int temp = top;
+        top = 0;
+        while(top < k && top < maxSize){
+            arr[top] += val;
+            top++;
         }
-    }
-
-    ~CustomStack() {
-        delete[] arr;
+        top = temp;
     }
 };
-
 
 /**
  * Your CustomStack object will be instantiated and called as such:
