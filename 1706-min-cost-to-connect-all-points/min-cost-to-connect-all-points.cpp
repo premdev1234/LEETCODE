@@ -1,24 +1,48 @@
 class Solution {
 public:
+    struct DSU {
+        vector<int> parent;
+        DSU(int n) {
+            parent.resize(n);
+            iota(parent.begin(), parent.end(), 0);
+        }
+
+        int find(int x) {
+            if (x != parent[x]) parent[x] = find(parent[x]);
+            return parent[x];
+        }
+
+        bool unite(int a, int b) {
+            int ra = find(a), rb = find(b);
+            if (ra == rb) return false;
+            parent[rb] = ra;
+            return true;
+        }
+    };
+
     int minCostConnectPoints(vector<vector<int>>& points) {
         int n = points.size();
-        vector<bool> inMST(n, false);
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq;  // min heap
-        pq.emplace(0, 0); // cost, point index
-        int res = 0, edgesUsed = 0;
-        while (edgesUsed < n) {
-            auto [cost, u] = pq.top(); pq.pop();
-            if (inMST[u]) continue;
+        vector<tuple<int, int, int>> edges;
 
-            inMST[u] = true;
-            res += cost;
-            edgesUsed++;
+        // Build all edges
+        for (int i = 0; i < n; ++i) {
+            for (int j = i+1; j < n; ++j) {
+                int dist = abs(points[i][0] - points[j][0]) + abs(points[i][1] - points[j][1]);
+                edges.emplace_back(dist, i, j);
+            }
+        }
 
-            for (int v = 0; v < n; ++v) {
-                if (!inMST[v]) {
-                    int dist = abs(points[u][0] - points[v][0]) + abs(points[u][1] - points[v][1]);
-                    pq.emplace(dist, v);
-                }
+        // Sort by distance
+        sort(edges.begin(), edges.end());
+
+        DSU dsu(n);
+        int res = 0, used = 0;
+
+        for (auto &[cost, u, v] : edges) {
+            if (dsu.unite(u, v)) {
+                res += cost;
+                used++;
+                if (used == n - 1) break;
             }
         }
 
