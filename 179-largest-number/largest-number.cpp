@@ -1,26 +1,15 @@
 class Solution {
 public:
-    static bool comparator(string&a,string&b)
-    {
-        return a+b>b+a;
-    }
     string largestNumber(vector<int>& nums) {
-     vector<string> numberString;
-     for(int i=0;i<nums.size();i++) 
-     {
-        numberString.push_back(to_string(nums[i]));
-     }  
-     sort(numberString.begin(),numberString.end(),comparator);
+        sort(nums.begin(), nums.end(), [](int a, int b) {
+            string A = to_string(a), B = to_string(b);
+            return A + B > B + A;
+        });
 
-     if(numberString[0]=="0")
-       return "0";
+        if (nums[0] == 0) return "0";  // Handle all zeros case
 
-     string result="";
-
-     for(auto it:numberString)
-     {
-        result+=it;
-     }  
-     return result;
+        string res;
+        for (int num : nums) res += to_string(num);
+        return res;
     }
 };
