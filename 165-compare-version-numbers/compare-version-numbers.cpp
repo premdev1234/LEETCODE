@@ -1,39 +1,30 @@
 class Solution {
 public:
-    vector<int> split(const string& s) {
-        vector<int> result;
-        string temp;
-        for (char c : s) {
-            if (c == '.') {
-                if (!temp.empty()) {
-                    int num = 0;
-                    for (char ch : temp)
-                        num = 10 * num + (ch - '0');
-                    result.push_back(num);
-                    temp.clear();
-                }
-            } else {
-                temp += c;
-            }
-        }
-        if (!temp.empty()) {
-            int num = 0;
-            for (char ch : temp)
-                num = 10 * num + (ch - '0');
-            result.push_back(num);
-        }
-        return result;
-    }
-
     int compareVersion(string version1, string version2) {
-        vector<int> v1 = split(version1), v2 = split(version2);
-        int n = max(v1.size(), v2.size());
-        for (int i = 0; i < n; i++) {
-            int num1 = i < v1.size() ? v1[i] : 0;
-            int num2 = i < v2.size() ? v2[i] : 0;
+        int i = 0, j = 0;
+        int n = version1.size(), m = version2.size();
+        
+        while (i < n || j < m) {
+            int num1 = 0, num2 = 0;
+
+            // Parse number from version1
+            while (i < n && version1[i] != '.') {
+                num1 = num1 * 10 + (version1[i] - '0');
+                i++;
+            }
+            i++; // skip the '.'
+
+            // Parse number from version2
+            while (j < m && version2[j] != '.') {
+                num2 = num2 * 10 + (version2[j] - '0');
+                j++;
+            }
+            j++; // skip the '.'
+
             if (num1 < num2) return -1;
             if (num1 > num2) return 1;
         }
+
         return 0;
     }
 };
