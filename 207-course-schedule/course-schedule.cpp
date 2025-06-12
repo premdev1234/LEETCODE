@@ -1,45 +1,34 @@
 class Solution {
 public:
-    void dfs(vector<vector<int>> &adj,vector<int> &visited,vector<int> &visi,int temp,bool &flag)
-    {
-        if(visited[temp] != 0)
-        {
-            return;
-        }
-        visi[temp]=1;
-        visited[temp]++;
-        for(int i=0;i<adj[temp].size();i++)
-        {
-            if(visi[adj[temp][i]] == 0)
-            {
-                dfs(adj,visited,visi,adj[temp][i],flag);
-            }
-            else
-            {
-                flag=true;
-            }
-        }
-        visi[temp]=0;
-    }
-    bool canFinish(int numCourses, vector<vector<int>>& prereq) 
-    {
-        vector<vector<int>> adj(numCourses);
-        for(int i=0;i<prereq.size();i++)
-        {
-            adj[prereq[i][0]].push_back(prereq[i][1]);
-        }
-        vector<int> visited(numCourses,0);
-        vector<int> visi(numCourses,0);
-        bool flag=false;
-        for(int i =0;i<visited.size();i++)
-        {
-            if(visited[i] == 0)
-            {
-                dfs(adj,visited,visi,i,flag);
-                if(flag == true)
-                {
-                    return false;
+    bool isCycle(int node, const unordered_map<int, vector<int>>& graph, 
+                 bitset<2001>& visited, bitset<2001>& inStack) {
+        visited[node] = true;
+        inStack[node] = true;
+
+        auto it = graph.find(node);
+        if (it != graph.end()) {
+            for (int child : it->second) {
+                if (!visited[child]) {
+                    if (isCycle(child, graph, visited, inStack)) return true;
+                } else if (inStack[child]) {
+                    return true; // back edge → cycle
                 }
+            }
+        }
+
+        inStack[node] = false;
+        return false;
+    }
+
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        unordered_map<int, vector<int>> graph;
+        for (const auto& pre : prerequisites) 
+            graph[pre[1]].push_back(pre[0]); // edge: course → dependent
+
+        bitset<2001> visited, inStack;
+        for (int i = 0; i < numCourses; ++i) {
+            if (!visited[i]) {
+                if (isCycle(i, graph, visited, inStack)) return false;
             }
         }
         return true;
