@@ -9,31 +9,34 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
- #define vt vector<TreeNode*> 
+ #define vt vector<TreeNode*>
 class Solution {
 public:
-    vt buildtrees(int start , int end){
-        vt trees ;
-        if(start > end){
-            trees.push_back(nullptr);
-            return trees;
-        }
-        for(int node =  start ; node <= end ; ++node){
-            vt lefttree =  buildtrees(start,node-1);
-            vt righttree =  buildtrees(node+1,end);
-            for(TreeNode* left : lefttree){
-                for(TreeNode* right : righttree){
-                    TreeNode* root =  new TreeNode(node);
-                    root->left =  left;
-                    root->right =  right;
-                    trees.push_back(root);
+    vt f(int s, int e, map<pair<int,int>, vector<TreeNode*>>&dp){
+        vt ans;
+
+        if(s > e) return {nullptr};
+
+        if(dp.find({s,e}) != dp.end()) return dp[{s,e}];
+
+        for(int i = s; i<= e; i++){
+            vector<TreeNode*> lefti = f(s,i-1,dp);
+            vector<TreeNode*> righti = f(i+1, e, dp);
+
+            for(auto node : lefti){
+                for(auto node1 : righti){
+                    TreeNode* root = new TreeNode(i,node, node1);
+                    ans.push_back(root);
                 }
             }
         }
-        return trees;
+
+        dp[{s,e}] = ans;
+        return ans;
     }
-    vt generateTrees(int n) {
-        if(n == 0) return {};
-        return buildtrees(1,n);
+    vector<TreeNode*> generateTrees(int n) {
+        map<pair<int,int>, vector<TreeNode*>>dp;
+
+        return f(1,n, dp);
     }
 };
