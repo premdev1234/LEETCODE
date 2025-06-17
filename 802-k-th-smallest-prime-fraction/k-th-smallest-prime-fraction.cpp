@@ -4,7 +4,7 @@ public:
         int n = arr.size();
         double left =0 , right =1, mid;
         vector<int>res;
-        while(left<=right){
+        while(right - left > 1e-9){
             mid = left + (right - left)/2;
             int j=1, total =0, num=0, den =0;
             double maxFrac =0;
