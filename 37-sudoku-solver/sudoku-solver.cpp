@@ -2,18 +2,13 @@
 
 class Solution {
 public:
-    bool is_safe(int i, int j, char val, vvc &board) {
-        // Check row and column
-        for (int r = 0; r < 9; ++r) {
-            if (board[i][r] == val || board[r][j] == val) return false;
-        }
-
-        // Check 3x3 block
-        int row_start = (i / 3) * 3;
-        int col_start = (j / 3) * 3;
-        for (int r = row_start; r < row_start + 3; ++r) {
-            for (int c = col_start; c < col_start + 3; ++c) {
-                if (board[r][c] == val) return false;
+    bool is_safe(vector<vector<char>>& board,char val,int row,int col){
+        for(int i=0;i<9;i++){
+            if(board[i][col]==val || board[row][i]==val){
+                return false;
+            }
+            if(board[3*(row/3)+i/3][3*(col/3)+i%3]==val){
+                return false;
             }
         }
         return true;
@@ -24,7 +19,7 @@ public:
             for (int j = 0; j < 9; ++j) {
                 if (board[i][j] == '.') {
                     for (char val = '1'; val <= '9'; ++val) {
-                        if (is_safe(i, j, val, board)) {
+                        if (is_safe(board,val,i, j)) {
                             board[i][j] = val;
                             if (solve(board)) return true; // Move forward
                             board[i][j] = '.'; // Backtrack
