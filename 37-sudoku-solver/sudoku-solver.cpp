@@ -1,48 +1,43 @@
+#define vvc vector<vector<char>>
+
 class Solution {
 public:
-    void solveSudoku(vector<vector<char>> &board) {
-        ios::sync_with_stdio(false);
-        cin.tie(nullptr);
-
-        memset(rowMask, 0, sizeof(rowMask));
-        memset(colMask, 0, sizeof(colMask));
-        memset(boxMask, 0, sizeof(boxMask));
-
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
-                if (board[i][j] != '.') {
-                    int num = board[i][j] - '1';
-                    int boxIndex = (i / 3) * 3 + (j / 3);
-                    rowMask[i][num] = colMask[j][num] = boxMask[boxIndex][num] = 1;
-                }
-            }
+    bool is_safe(int i, int j, char val, vvc &board) {
+        // Check row and column
+        for (int r = 0; r < 9; ++r) {
+            if (board[i][r] == val || board[r][j] == val) return false;
         }
-        solve(board);
-    }
 
-private:
-    bitset<9> rowMask[9], colMask[9], boxMask[9];
-
-    bool solve(vector<vector<char>> &board) {
-        for (int row = 0; row < 9; row++) {
-            for (int col = 0; col < 9; col++) {
-                if (board[row][col] == '.') {
-                    int boxIndex = (row / 3) * 3 + (col / 3);
-                    for (int num = 0; num < 9; num++) {
-                        if (!rowMask[row][num] && !colMask[col][num] && !boxMask[boxIndex][num]) {
-                            board[row][col] = num + '1';
-                            rowMask[row][num] = colMask[col][num] = boxMask[boxIndex][num] = 1;
-
-                            if (solve(board)) return true;
-
-                            board[row][col] = '.';
-                            rowMask[row][num] = colMask[col][num] = boxMask[boxIndex][num] = 0;
-                        }
-                    }
-                    return false;
-                }
+        // Check 3x3 block
+        int row_start = (i / 3) * 3;
+        int col_start = (j / 3) * 3;
+        for (int r = row_start; r < row_start + 3; ++r) {
+            for (int c = col_start; c < col_start + 3; ++c) {
+                if (board[r][c] == val) return false;
             }
         }
         return true;
+    }
+
+    bool solve(vvc &board) {
+        for (int i = 0; i < 9; ++i) {
+            for (int j = 0; j < 9; ++j) {
+                if (board[i][j] == '.') {
+                    for (char val = '1'; val <= '9'; ++val) {
+                        if (is_safe(i, j, val, board)) {
+                            board[i][j] = val;
+                            if (solve(board)) return true; // Move forward
+                            board[i][j] = '.'; // Backtrack
+                        }
+                    }
+                    return false; // No valid number, must backtrack
+                }
+            }
+        }
+        return true; // Solved
+    }
+
+    void solveSudoku(vvc &board) {
+        solve(board);
     }
 };
