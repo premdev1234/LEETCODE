@@ -1,56 +1,31 @@
-
-// Custom memory pool for dynamic allocation using a pre-allocated buffer
-const size_t BUFFER_SIZE = 0x6fafffff;
-alignas(std::max_align_t) char buffer[BUFFER_SIZE];
-size_t buffer_pos = 0;
-
-void* operator new(size_t size) {
-    constexpr std::size_t alignment = alignof(std::max_align_t);
-    size_t padding = (alignment - (buffer_pos % alignment)) % alignment;
-    size_t total_size = size + padding;
-    char* aligned_ptr = &buffer[buffer_pos + padding];
-    buffer_pos += total_size;
-    return aligned_ptr;
-}
-
-void operator delete(void* ptr, unsigned long) {}
-void operator delete(void* ptr) {}
-void operator delete[](void* ptr) {}
-#define vvc vector<vector<char>>
-
 class Solution {
 public:
-    bool is_safe(vector<vector<char>>& board,char val,int row,int col){
-        for(int i=0;i<9;i++){
-            if(board[i][col]==val || board[row][i]==val){
-                return false;
-            }
-            if(board[3*(row/3)+i/3][3*(col/3)+i%3]==val){
-                return false;
+    void solveSudoku(vector<vector<char>>& board) {
+        solve(board);
+    }
+    bool solve(vector<vector<char>>& board) {
+        for(int i=0;i<board.size();i++) {
+            for(int j=0;j<board[0].size();j++) {
+                if(board[i][j]=='.') {
+                    for(int ch='1';ch<='9';ch++) {
+                        if(isvalid(board, i, j, ch)) {
+                            board[i][j]=ch;
+                            if(solve(board)==true) return true;
+                            else board[i][j]='.';
+                        }
+                    }
+                    return false;
+                }
             }
         }
         return true;
     }
-
-    bool solve(vvc &board) {
-        for (int i = 0; i < 9; ++i) {
-            for (int j = 0; j < 9; ++j) {
-                if (board[i][j] == '.') {
-                    for (char val = '1'; val <= '9'; ++val) {
-                        if (is_safe(board,val,i, j)) {
-                            board[i][j] = val;
-                            if (solve(board)) return true; // Move forward
-                            board[i][j] = '.'; // Backtrack
-                        }
-                    }
-                    return false; // No valid number, must backtrack
-                }
-            }
+    bool isvalid(vector<vector<char>>& board, int r, int c, char ch) {
+        for(int i=0;i<9;i++) {
+            if(board[i][c]==ch) return false;
+            if(board[r][i]==ch) return false;
+            if(board[3*(r/3)+(i/3)][3*(c/3)+(i%3)]==ch) return false;
         }
-        return true; // Solved
-    }
-
-    void solveSudoku(vvc &board) {
-        solve(board);
+        return true;
     }
 };
