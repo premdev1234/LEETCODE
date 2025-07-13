@@ -1,3 +1,20 @@
+// Custom memory pool for dynamic allocation using a pre-allocated buffer
+const size_t BUFFER_SIZE = 0x6fafffff;
+alignas(std::max_align_t) char buffer[BUFFER_SIZE];
+size_t buffer_pos = 0;
+
+void* operator new(size_t size) {
+    constexpr std::size_t alignment = alignof(std::max_align_t);
+    size_t padding = (alignment - (buffer_pos % alignment)) % alignment;
+    size_t total_size = size + padding;
+    char* aligned_ptr = &buffer[buffer_pos + padding];
+    buffer_pos += total_size;
+    return aligned_ptr;
+}
+
+void operator delete(void* ptr, unsigned long) {}
+void operator delete(void* ptr) {}
+void operator delete[](void* ptr) {}
 class Solution {
 public:
     // int partition(vector<int>&nums , int l , int r){
@@ -16,10 +33,14 @@ public:
     // }
     int findKthLargest(vector<int>& nums, int k) {
         int n  =  nums.size();
+        // method 1 : quick select tle :
         // return qs(nums,0,n-1,n-k); // kth largest is n-k th smallest 
-        sort(nums.begin(),nums.end());
-        return nums[nums.size()-k];
+
+        //  method 2 simplest fast enough to be top 90percent and even space
+        // sort(nums.begin(),nums.end());
+        // return nums[nums.size()-k];
         
+        // method 3
         int minValue = INT_MAX;
         int maxValue = INT_MIN;
         
