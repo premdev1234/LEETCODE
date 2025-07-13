@@ -17,7 +17,8 @@ public:
     int findKthLargest(vector<int>& nums, int k) {
         int n  =  nums.size();
         // return qs(nums,0,n-1,n-k); // kth largest is n-k th smallest 
-        
+        sort(nums.begin(),nums.end());
+        return nums[nums.size()-k];
         
         int minValue = INT_MAX;
         int maxValue = INT_MIN;
