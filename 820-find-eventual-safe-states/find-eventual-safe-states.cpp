@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool dfs(int node, bitset<10001>& visited, bitset<10001>& onPath,
-             vector<bool>& safe, vector<vector<int>>& graph) {
+             bitset<10001>& safe, vector<vector<int>>& graph) {
         visited[node] = true;
         onPath[node] = true;
 
@@ -22,8 +22,7 @@ public:
 
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
         int n = graph.size();
-        bitset<10001> visited, onPath;
-        vector<bool> safe(n, false);
+        bitset<10001> visited, onPath , safe;
 
         for (int i = 0; i < n; ++i) {
             if (!visited[i]) {
