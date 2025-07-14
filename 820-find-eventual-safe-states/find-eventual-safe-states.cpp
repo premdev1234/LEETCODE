@@ -1,39 +1,34 @@
+enum color { WHITE, GRAY, BLACK };
+
 class Solution {
 public:
-    bool dfs(int node, bitset<10001>& visited, bitset<10001>& onPath,
-             bitset<10001>& safe, vector<vector<int>>& graph) {
-        visited[node] = true;
-        onPath[node] = true;
+    bool dfs(int node, vector<int>& color, vector<vector<int>>& graph) {
+        color[node] = GRAY;
 
         for (int neighbor : graph[node]) {
-            if (!visited[neighbor]) {
-                if (dfs(neighbor, visited, onPath, safe, graph)) {
-                    return true;
-                }
-            } else if (onPath[neighbor]) {
-                return true;
+            if (color[neighbor] == WHITE) {
+                if (dfs(neighbor, color, graph))
+                    return true; // cycle detected
+            } else if (color[neighbor] == GRAY) {
+                return true; // back edge found → cycle
             }
         }
 
-        onPath[node] = false;
-        safe[node] = true;
+        color[node] = BLACK;
         return false;
     }
 
     vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
         int n = graph.size();
-        bitset<10001> visited, onPath , safe;
+        vector<int> color(n, WHITE);
+        vector<int> result;
 
         for (int i = 0; i < n; ++i) {
-            if (!visited[i]) {
-                dfs(i, visited, onPath, safe, graph);
+            if (!dfs(i, color, graph)) {
+                result.push_back(i); // safe node
             }
         }
 
-        vector<int> result;
-        for (int i = 0; i < n; ++i) {
-            if (safe[i]) result.push_back(i);
-        }
-        return result;
+        return result; // already in sorted order due to increasing i
     }
 };
