@@ -4,16 +4,11 @@ public:
     int combinationSum4(vector<int>& coins, int target) {
         const int n = coins.size();
         dp[0] = 1;
-
-        sort(coins.begin(), coins.end()); // helpful if pruning
-
-        for (int i = 1; i <= target; i++) {
-            for (int coin : coins) {
-                if (coin > i) break; // pruning
-                if(i-coin >= 0 ) dp[i] += dp[i - coin];
+        sort(begin(coins),end(coins)); // helpful if pruning
+        for(int i = 1 ; i <= target ; ++i){
+            for(int coin : coins){
+                if(coin <= i and i-coin >= 0) dp[i] += dp[i-coin];
             }
         }
-
-        return dp[target] > INT_MAX ? -1 : static_cast<int>(dp[target]); // safe cast
-    }
+        return dp[target] >INT_MAX ? -1 : static_cast<int>(dp[target]);}
 };
