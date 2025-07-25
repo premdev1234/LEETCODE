@@ -1,5 +1,5 @@
 // Custom memory pool for dynamic allocation using a pre-allocated buffer
-const size_t BUFFER_SIZE = 0x6fafffff;
+const size_t BUFFER_SIZE = 0x3fafffff;
 alignas(std::max_align_t) char buffer[BUFFER_SIZE];
 size_t buffer_pos = 0;
 
