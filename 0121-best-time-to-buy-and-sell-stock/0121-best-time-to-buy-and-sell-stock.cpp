@@ -2,11 +2,13 @@ class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         int n = (int)prices.size();
-        std::vector<int> p(n) , s(n);
-        p[0] = prices[0] , s[n-1] = prices[n-1];
-        int ans = 0 ;
-        for(int i = 1 ; i < n ; ++i)p[i] = std::min(p[i-1],prices[i]) , s[n-i-1] = std::max(s[n-i],prices[n-i-1]);
-        for(int i = 0 ; i < n ; ++i)ans = std::max(ans , s[i] - p[i]);
-        return ans ;
+        vector<pair<int,int>> v(n) ;
+        v[0].first = prices[0];
+        v[n-1].second = prices[n-1];
+        for(int  i = 1 ; i < n ; ++i)v[i].first = min(prices[i] , v[i-1].first );
+        for(int i = n - 2 ; i>= 0 ; --i)v[i].second = max(prices[i],v[i+1].second);
+        int profit = 0 ;
+        for(int i = 0 ;  i < n ; ++i)profit = max(profit , v[i].second - v[i].first);
+        return profit;
     }
 };
