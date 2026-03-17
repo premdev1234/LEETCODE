@@ -50,8 +50,21 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
+| [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
 <!---LeetCode Topics End-->
