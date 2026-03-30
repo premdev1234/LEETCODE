@@ -75,6 +75,7 @@ Happy coding and happy problem solving!
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 ## Queue
 | Problem Name | Difficulty |
@@ -100,4 +101,12 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2223-sum-of-scores-of-built-strings](https://github.com/premdev1234/LEETCODE/tree/main/2223-sum-of-scores-of-built-strings/) | Hard |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
 <!---LeetCode Topics End-->
