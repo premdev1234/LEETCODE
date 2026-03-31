@@ -76,6 +76,7 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+| [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 ## Queue
 | Problem Name | Difficulty |
@@ -105,8 +106,13 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+| [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
 <!---LeetCode Topics End-->
