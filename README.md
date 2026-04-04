@@ -51,6 +51,7 @@ Happy coding and happy problem solving!
 | ------- | ------- |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2223-sum-of-scores-of-built-strings](https://github.com/premdev1234/LEETCODE/tree/main/2223-sum-of-scores-of-built-strings/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -58,6 +59,7 @@ Happy coding and happy problem solving!
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0834-sum-of-distances-in-tree](https://github.com/premdev1234/LEETCODE/tree/main/0834-sum-of-distances-in-tree/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 ## Rolling Hash
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -128,4 +130,21 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0834-sum-of-distances-in-tree](https://github.com/premdev1234/LEETCODE/tree/main/0834-sum-of-distances-in-tree/) | Hard |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
+## Topological Sort
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 <!---LeetCode Topics End-->
