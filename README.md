@@ -79,6 +79,7 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+| [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
 | [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
@@ -163,4 +164,12 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
 <!---LeetCode Topics End-->
