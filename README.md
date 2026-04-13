@@ -82,6 +82,7 @@ Happy coding and happy problem solving!
 | [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
+| [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -102,6 +103,7 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2223-sum-of-scores-of-built-strings](https://github.com/premdev1234/LEETCODE/tree/main/2223-sum-of-scores-of-built-strings/) | Hard |
+| [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
 ## Suffix Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -153,4 +155,12 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
+## Segment Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
 <!---LeetCode Topics End-->
