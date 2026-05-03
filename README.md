@@ -117,6 +117,7 @@ Happy coding and happy problem solving!
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
 | [0051-n-queens](https://github.com/premdev1234/LEETCODE/tree/main/0051-n-queens/) | Hard |
+| [0052-n-queens-ii](https://github.com/premdev1234/LEETCODE/tree/main/0052-n-queens-ii/) | Hard |
 | [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
