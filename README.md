@@ -49,6 +49,7 @@ Happy coding and happy problem solving!
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
@@ -56,6 +57,7 @@ Happy coding and happy problem solving!
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0834-sum-of-distances-in-tree](https://github.com/premdev1234/LEETCODE/tree/main/0834-sum-of-distances-in-tree/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
@@ -172,4 +174,12 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
 <!---LeetCode Topics End-->
