@@ -60,6 +60,7 @@ Happy coding and happy problem solving!
 | [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
 | [0834-sum-of-distances-in-tree](https://github.com/premdev1234/LEETCODE/tree/main/0834-sum-of-distances-in-tree/) | Hard |
+| [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 ## Rolling Hash
@@ -84,6 +85,7 @@ Happy coding and happy problem solving!
 | [0051-n-queens](https://github.com/premdev1234/LEETCODE/tree/main/0051-n-queens/) | Hard |
 | [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
 | [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
+| [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
 | [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
@@ -123,6 +125,7 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+| [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
