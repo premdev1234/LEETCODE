@@ -54,6 +54,7 @@ Happy coding and happy problem solving!
 | [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2223-sum-of-scores-of-built-strings](https://github.com/premdev1234/LEETCODE/tree/main/2223-sum-of-scores-of-built-strings/) | Hard |
+| [3121-count-the-number-of-special-characters-ii](https://github.com/premdev1234/LEETCODE/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -148,6 +149,7 @@ Happy coding and happy problem solving!
 | ------- | ------- |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
+| [3121-count-the-number-of-special-characters-ii](https://github.com/premdev1234/LEETCODE/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
