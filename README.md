@@ -54,6 +54,7 @@ Happy coding and happy problem solving!
 | [1392-longest-happy-prefix](https://github.com/premdev1234/LEETCODE/tree/main/1392-longest-happy-prefix/) | Hard |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 | [2223-sum-of-scores-of-built-strings](https://github.com/premdev1234/LEETCODE/tree/main/2223-sum-of-scores-of-built-strings/) | Hard |
+| [3093-longest-common-suffix-queries](https://github.com/premdev1234/LEETCODE/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/premdev1234/LEETCODE/tree/main/3121-count-the-number-of-special-characters-ii/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -89,6 +90,7 @@ Happy coding and happy problem solving!
 | [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
+| [3093-longest-common-suffix-queries](https://github.com/premdev1234/LEETCODE/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
 ## Queue
 | Problem Name | Difficulty |
@@ -190,4 +192,8 @@ Happy coding and happy problem solving!
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
+## Trie
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3093-longest-common-suffix-queries](https://github.com/premdev1234/LEETCODE/tree/main/3093-longest-common-suffix-queries/) | Hard |
 <!---LeetCode Topics End-->
