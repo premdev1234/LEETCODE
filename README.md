@@ -1,5 +1,5 @@
-# ÃÂ°ÃÂÃÂÃÂ LEETCODE SOLUTIONS  
-![LeetCode Badge](https://img.shields.io/badge/Solved-ÃÂ°ÃÂÃÂÃÂ¥%20Over%20100-orange)  
+# ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ LEETCODE SOLUTIONS  
+![LeetCode Badge](https://img.shields.io/badge/Solved-ÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂ¥%20Over%20100-orange)  
 ![C++ Badge](https://img.shields.io/badge/Language-C++-blue.svg)  
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/premdev1234/LEETCODE)  
 ![Last Commit](https://img.shields.io/github/last-commit/premdev1234/LEETCODE)  
