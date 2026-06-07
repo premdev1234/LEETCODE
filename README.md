@@ -1,5 +1,5 @@
-# ð LEETCODE SOLUTIONS  
-![LeetCode Badge](https://img.shields.io/badge/Solved-ð¥%20Over%20100-orange)  
+# Ã°ÂÂÂ LEETCODE SOLUTIONS  
+![LeetCode Badge](https://img.shields.io/badge/Solved-Ã°ÂÂÂ¥%20Over%20100-orange)  
 ![C++ Badge](https://img.shields.io/badge/Language-C++-blue.svg)  
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/premdev1234/LEETCODE)  
 ![Last Commit](https://img.shields.io/github/last-commit/premdev1234/LEETCODE)  
@@ -93,6 +93,7 @@ Happy coding and happy problem solving!
 | [3093-longest-common-suffix-queries](https://github.com/premdev1234/LEETCODE/tree/main/3093-longest-common-suffix-queries/) | Hard |
 | [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/premdev1234/LEETCODE/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
+| [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Queue
 |  |
 | ------- |
@@ -114,6 +115,7 @@ Happy coding and happy problem solving!
 | ------- |
 | [2223-sum-of-scores-of-built-strings](https://github.com/premdev1234/LEETCODE/tree/main/2223-sum-of-scores-of-built-strings/) | Hard |
 | [3161-block-placement-queries](https://github.com/premdev1234/LEETCODE/tree/main/3161-block-placement-queries/) | Hard |
+| [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Suffix Array
 |  |
 | ------- |
@@ -131,6 +133,7 @@ Happy coding and happy problem solving!
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
 | [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/premdev1234/LEETCODE/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
+| [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -193,6 +196,7 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
+| [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Recursion
 |  |
 | ------- |
@@ -209,4 +213,8 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/premdev1234/LEETCODE/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
+## Two Pointers
+|  |
+| ------- |
+| [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
 <!---LeetCode Topics End-->
