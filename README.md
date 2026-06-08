@@ -1,5 +1,5 @@
-# ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ LEETCODE SOLUTIONS  
-![LeetCode Badge](https://img.shields.io/badge/Solved-ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥%20Over%20100-orange)  
+# ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ LEETCODE SOLUTIONS  
+![LeetCode Badge](https://img.shields.io/badge/Solved-ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥%20Over%20100-orange)  
 ![C++ Badge](https://img.shields.io/badge/Language-C++-blue.svg)  
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/premdev1234/LEETCODE)  
 ![Last Commit](https://img.shields.io/github/last-commit/premdev1234/LEETCODE)  
@@ -87,6 +87,7 @@ Happy coding and happy problem solving!
 | [0051-n-queens](https://github.com/premdev1234/LEETCODE/tree/main/0051-n-queens/) | Hard |
 | [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
 | [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
+| [1184-car-pooling](https://github.com/premdev1234/LEETCODE/tree/master/1184-car-pooling) |
 | [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 | [2768-number-of-black-blocks](https://github.com/premdev1234/LEETCODE/tree/main/2768-number-of-black-blocks/) | Medium |
@@ -105,6 +106,7 @@ Happy coding and happy problem solving!
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [1184-car-pooling](https://github.com/premdev1234/LEETCODE/tree/master/1184-car-pooling) |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
 ## Monotonic Queue
 |  |
@@ -131,6 +133,7 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [0047-permutations-ii](https://github.com/premdev1234/LEETCODE/tree/main/0047-permutations-ii/) | Medium |
+| [1184-car-pooling](https://github.com/premdev1234/LEETCODE/tree/master/1184-car-pooling) |
 | [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/premdev1234/LEETCODE/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
@@ -192,6 +195,7 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/premdev1234/LEETCODE/tree/main/0054-spiral-matrix/) | Medium |
+| [1184-car-pooling](https://github.com/premdev1234/LEETCODE/tree/master/1184-car-pooling) |
 ## Greedy
 |  |
 | ------- |
@@ -217,4 +221,8 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1184-car-pooling](https://github.com/premdev1234/LEETCODE/tree/master/1184-car-pooling) |
 <!---LeetCode Topics End-->
