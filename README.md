@@ -1,5 +1,5 @@
-# ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ LEETCODE SOLUTIONS  
-![LeetCode Badge](https://img.shields.io/badge/Solved-ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥%20Over%20100-orange)  
+# ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ LEETCODE SOLUTIONS  
+![LeetCode Badge](https://img.shields.io/badge/Solved-ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¥%20Over%20100-orange)  
 ![C++ Badge](https://img.shields.io/badge/Language-C++-blue.svg)  
 ![Commit Activity](https://img.shields.io/github/commit-activity/m/premdev1234/LEETCODE)  
 ![Last Commit](https://img.shields.io/github/last-commit/premdev1234/LEETCODE)  
@@ -61,6 +61,7 @@ Happy coding and happy problem solving!
 | ------- |
 | [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
 | [0132-palindrome-partitioning-ii](https://github.com/premdev1234/LEETCODE/tree/main/0132-palindrome-partitioning-ii/) | Hard |
+| [0397-integer-replacement](https://github.com/premdev1234/LEETCODE/tree/master/0397-integer-replacement) |
 | [0834-sum-of-distances-in-tree](https://github.com/premdev1234/LEETCODE/tree/main/0834-sum-of-distances-in-tree/) | Hard |
 | [1340-jump-game-v](https://github.com/premdev1234/LEETCODE/tree/main/1340-jump-game-v/) | Hard |
 | [1425-constrained-subsequence-sum](https://github.com/premdev1234/LEETCODE/tree/main/1425-constrained-subsequence-sum/) | Hard |
@@ -141,6 +142,7 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [0078-subsets](https://github.com/premdev1234/LEETCODE/tree/main/0078-subsets/) | Medium |
+| [0397-integer-replacement](https://github.com/premdev1234/LEETCODE/tree/master/0397-integer-replacement) |
 ## Tree
 |  |
 | ------- |
@@ -167,6 +169,7 @@ Happy coding and happy problem solving!
 ## Memoization
 |  |
 | ------- |
+| [0397-integer-replacement](https://github.com/premdev1234/LEETCODE/tree/master/0397-integer-replacement) |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/premdev1234/LEETCODE/tree/main/1857-largest-color-value-in-a-directed-graph/) | Hard |
 ## Counting
 |  |
@@ -200,6 +203,7 @@ Happy coding and happy problem solving!
 |  |
 | ------- |
 | [0044-wildcard-matching](https://github.com/premdev1234/LEETCODE/tree/main/0044-wildcard-matching/) | Hard |
+| [0397-integer-replacement](https://github.com/premdev1234/LEETCODE/tree/master/0397-integer-replacement) |
 | [3967-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/premdev1234/LEETCODE/tree/master/3967-earliest-finish-time-for-land-and-water-rides-ii) |
 ## Recursion
 |  |
