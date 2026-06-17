@@ -32,6 +32,7 @@
 |  |
 | ------- |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
+| [3931-process-string-with-special-operations-i](https://github.com/premdev1234/LEETCODE/tree/master/3931-process-string-with-special-operations-i) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Hash Table
 |  |
@@ -41,6 +42,7 @@
 |  |
 | ------- |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
+| [3931-process-string-with-special-operations-i](https://github.com/premdev1234/LEETCODE/tree/master/3931-process-string-with-special-operations-i) |
 ## Trie
 |  |
 | ------- |
