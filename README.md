@@ -7,6 +7,7 @@
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
+| [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Binary Search
 |  |
@@ -16,6 +17,7 @@
 |  |
 | ------- |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 ## Sorting
 |  |
 | ------- |
@@ -28,6 +30,7 @@
 |  |
 | ------- |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
+| [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 ## Simulation
 |  |
 | ------- |
@@ -55,4 +58,8 @@
 |  |
 | ------- |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 <!---LeetCode Topics End-->
