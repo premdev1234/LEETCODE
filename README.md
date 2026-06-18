@@ -21,6 +21,7 @@
 |  |
 | ------- |
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
+| [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 ## Sorting
@@ -51,6 +52,7 @@
 ## String
 |  |
 | ------- |
+| [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 | [3931-process-string-with-special-operations-i](https://github.com/premdev1234/LEETCODE/tree/master/3931-process-string-with-special-operations-i) |
@@ -88,10 +90,12 @@
 ## Greedy
 |  |
 | ------- |
+| [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [1355-minimum-deletions-to-make-array-beautiful](https://github.com/premdev1234/LEETCODE/tree/master/1355-minimum-deletions-to-make-array-beautiful) |
 | [4044-maximum-bitwise-xor-after-rearrangement](https://github.com/premdev1234/LEETCODE/tree/master/4044-maximum-bitwise-xor-after-rearrangement) |
 ## Stack
 |  |
 | ------- |
+| [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [1355-minimum-deletions-to-make-array-beautiful](https://github.com/premdev1234/LEETCODE/tree/master/1355-minimum-deletions-to-make-array-beautiful) |
 <!---LeetCode Topics End-->
