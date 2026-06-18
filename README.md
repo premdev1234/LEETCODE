@@ -11,6 +11,7 @@
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
+| [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/premdev1234/LEETCODE/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Binary Search
@@ -24,6 +25,7 @@
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
 | [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/premdev1234/LEETCODE/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 ## Sorting
 |  |
