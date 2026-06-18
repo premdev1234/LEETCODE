@@ -9,6 +9,7 @@
 | [1355-minimum-deletions-to-make-array-beautiful](https://github.com/premdev1234/LEETCODE/tree/master/1355-minimum-deletions-to-make-array-beautiful) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
+| [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 | [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
@@ -28,6 +29,7 @@
 |  |
 | ------- |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 ## Linked List
 |  |
@@ -42,12 +44,14 @@
 |  |
 | ------- |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
+| [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3931-process-string-with-special-operations-i](https://github.com/premdev1234/LEETCODE/tree/master/3931-process-string-with-special-operations-i) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Hash Table
 |  |
 | ------- |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
+| [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 ## String
 |  |
@@ -98,4 +102,8 @@
 | ------- |
 | [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [1355-minimum-deletions-to-make-array-beautiful](https://github.com/premdev1234/LEETCODE/tree/master/1355-minimum-deletions-to-make-array-beautiful) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 <!---LeetCode Topics End-->
