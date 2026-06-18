@@ -62,4 +62,8 @@
 |  |
 | ------- |
 | [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
+## Math
+|  |
+| ------- |
+| [1446-angle-between-hands-of-a-clock](https://github.com/premdev1234/LEETCODE/tree/master/1446-angle-between-hands-of-a-clock) |
 <!---LeetCode Topics End-->
