@@ -48,6 +48,7 @@
 | ------- |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
 | [3931-process-string-with-special-operations-i](https://github.com/premdev1234/LEETCODE/tree/master/3931-process-string-with-special-operations-i) |
+| [4044-maximum-bitwise-xor-after-rearrangement](https://github.com/premdev1234/LEETCODE/tree/master/4044-maximum-bitwise-xor-after-rearrangement) |
 ## Trie
 |  |
 | ------- |
@@ -65,6 +66,7 @@
 | ------- |
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
 | [3659-count-paths-with-the-given-xor-value](https://github.com/premdev1234/LEETCODE/tree/master/3659-count-paths-with-the-given-xor-value) |
+| [4044-maximum-bitwise-xor-after-rearrangement](https://github.com/premdev1234/LEETCODE/tree/master/4044-maximum-bitwise-xor-after-rearrangement) |
 ## Math
 |  |
 | ------- |
@@ -77,4 +79,8 @@
 |  |
 | ------- |
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
+## Greedy
+|  |
+| ------- |
+| [4044-maximum-bitwise-xor-after-rearrangement](https://github.com/premdev1234/LEETCODE/tree/master/4044-maximum-bitwise-xor-after-rearrangement) |
 <!---LeetCode Topics End-->
