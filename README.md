@@ -7,6 +7,7 @@
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
 | [1355-minimum-deletions-to-make-array-beautiful](https://github.com/premdev1234/LEETCODE/tree/master/1355-minimum-deletions-to-make-array-beautiful) |
+| [1833-find-the-highest-altitude](https://github.com/premdev1234/LEETCODE/tree/master/1833-find-the-highest-altitude) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
@@ -74,6 +75,7 @@
 ## Prefix Sum
 |  |
 | ------- |
+| [1833-find-the-highest-altitude](https://github.com/premdev1234/LEETCODE/tree/master/1833-find-the-highest-altitude) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/premdev1234/LEETCODE/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Bit Manipulation
 |  |
