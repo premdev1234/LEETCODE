@@ -4,6 +4,7 @@
 ## Array
 |  |
 | ------- |
+| [0274-h-index](https://github.com/premdev1234/LEETCODE/tree/master/0274-h-index) |
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
 | [1355-minimum-deletions-to-make-array-beautiful](https://github.com/premdev1234/LEETCODE/tree/master/1355-minimum-deletions-to-make-array-beautiful) |
@@ -31,6 +32,7 @@
 ## Sorting
 |  |
 | ------- |
+| [0274-h-index](https://github.com/premdev1234/LEETCODE/tree/master/0274-h-index) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
@@ -110,4 +112,8 @@
 |  |
 | ------- |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/premdev1234/LEETCODE/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
