@@ -116,4 +116,16 @@
 |  |
 | ------- |
 | [0274-h-index](https://github.com/premdev1234/LEETCODE/tree/master/0274-h-index) |
+## Tree
+|  |
+| ------- |
+| [0832-binary-tree-pruning](https://github.com/premdev1234/LEETCODE/tree/master/0832-binary-tree-pruning) |
+## Depth-First Search
+|  |
+| ------- |
+| [0832-binary-tree-pruning](https://github.com/premdev1234/LEETCODE/tree/master/0832-binary-tree-pruning) |
+## Binary Tree
+|  |
+| ------- |
+| [0832-binary-tree-pruning](https://github.com/premdev1234/LEETCODE/tree/master/0832-binary-tree-pruning) |
 <!---LeetCode Topics End-->
