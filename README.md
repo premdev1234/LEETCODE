@@ -24,6 +24,7 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/premdev1234/LEETCODE/tree/master/0005-longest-palindromic-substring) |
 | [0526-beautiful-arrangement](https://github.com/premdev1234/LEETCODE/tree/master/0526-beautiful-arrangement) |
 | [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
@@ -61,6 +62,7 @@
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/premdev1234/LEETCODE/tree/master/0005-longest-palindromic-substring) |
 | [0678-valid-parenthesis-string](https://github.com/premdev1234/LEETCODE/tree/master/0678-valid-parenthesis-string) |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
@@ -128,4 +130,8 @@
 |  |
 | ------- |
 | [0832-binary-tree-pruning](https://github.com/premdev1234/LEETCODE/tree/master/0832-binary-tree-pruning) |
+## Two Pointers
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/premdev1234/LEETCODE/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
