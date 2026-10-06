@@ -11,6 +11,7 @@
 | [1833-find-the-highest-altitude](https://github.com/premdev1234/LEETCODE/tree/master/1833-find-the-highest-altitude) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2411-spiral-matrix-iv](https://github.com/premdev1234/LEETCODE/tree/master/2411-spiral-matrix-iv) |
+| [2634-minimum-common-value](https://github.com/premdev1234/LEETCODE/tree/master/2634-minimum-common-value) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/premdev1234/LEETCODE/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
@@ -20,6 +21,7 @@
 |  |
 | ------- |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/premdev1234/LEETCODE/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [2634-minimum-common-value](https://github.com/premdev1234/LEETCODE/tree/master/2634-minimum-common-value) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 ## Dynamic Programming
 |  |
@@ -57,6 +59,7 @@
 |  |
 | ------- |
 | [0839-short-encoding-of-words](https://github.com/premdev1234/LEETCODE/tree/master/0839-short-encoding-of-words) |
+| [2634-minimum-common-value](https://github.com/premdev1234/LEETCODE/tree/master/2634-minimum-common-value) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/premdev1234/LEETCODE/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [3419-maximum-points-inside-the-square](https://github.com/premdev1234/LEETCODE/tree/master/3419-maximum-points-inside-the-square) |
 ## String
@@ -134,4 +137,5 @@
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/premdev1234/LEETCODE/tree/master/0005-longest-palindromic-substring) |
+| [2634-minimum-common-value](https://github.com/premdev1234/LEETCODE/tree/master/2634-minimum-common-value) |
 <!---LeetCode Topics End-->
