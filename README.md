@@ -138,4 +138,8 @@
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/premdev1234/LEETCODE/tree/master/0005-longest-palindromic-substring) |
 | [2634-minimum-common-value](https://github.com/premdev1234/LEETCODE/tree/master/2634-minimum-common-value) |
+## Database
+|  |
+| ------- |
+| [0620-not-boring-movies](https://github.com/premdev1234/LEETCODE/tree/master/0620-not-boring-movies) |
 <!---LeetCode Topics End-->
