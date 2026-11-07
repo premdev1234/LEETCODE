@@ -141,5 +141,6 @@
 ## Database
 |  |
 | ------- |
+| [0586-customer-placing-the-largest-number-of-orders](https://github.com/premdev1234/LEETCODE/tree/master/0586-customer-placing-the-largest-number-of-orders) |
 | [0620-not-boring-movies](https://github.com/premdev1234/LEETCODE/tree/master/0620-not-boring-movies) |
 <!---LeetCode Topics End-->
